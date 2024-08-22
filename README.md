@@ -10,9 +10,9 @@ A blog post web application built using Python Django and REST API using Django 
 * GET /api/posts - Returns the list of all posts by all user
 * POST /api/posts -  Creates a new post
 
-* GET /api/posts/<id> - Returns a post by it's post ID.
-* PUT /api/posts/<id> - Updates a post by it's post ID.
-* DELETE /api/posts/<id> - Deletes a post by it's post ID.
+* GET /api/posts/&lt;id&gt; - Returns a post by it's post ID.
+* PUT /api/posts/&lt;id&gt; - Updates a post by it's post ID.
+* DELETE /api/posts/&lt;id&gt; - Deletes a post by it's post ID.
 
 ### Preview Images:
 
