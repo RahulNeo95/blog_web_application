@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %} Delete {{object.title}} {% endblock title %}
+
+{% block content %}
+
+<div>
+    <form action="" method="post"> {% csrf_token %}
+        <p>Are you sure you want to delete {{ object.title}}?</p>
+    <input type="submit" value="Delete">
+    </form>
+
+    <br>
+
+    <p class="c3id3"><a href="{% url 'post_detail' post.pk %}"> &lt; &lt; Back </a></p>
+</div>
+{% endblock content %}
+
+
+
+
+
+
+
+
+
+
+
+
+

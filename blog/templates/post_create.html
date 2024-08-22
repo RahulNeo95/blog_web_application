@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %} Create Blog {%endblock title%}
+
+{% block content %} 
+
+<div>
+    <form action="" method="Post"> {% csrf_token %}
+        {{form | crispy}}
+    <input type="submit" value="Post">
+    </form>
+
+    <br>
+
+    <p class="c3id3"><a href="{% url 'home' %}"> &lt; &lt; Back </a></p>
+</div>
+{% endblock content %} 

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %} {{post.title}} {% endblock title %}
+
+{% block content %}
+
+<div class="c3id1">
+    <h2>{{post.title}}</h2>
+    <p><span>Author : </span>{{post.author}}</p>
+    <p><span>Created: </span>{{post.created}}</p>
+    <hr>
+    <pre> <p class="c3id1">{{post.body}}</p></pre>
+    <hr>
+</div>
+<div class="c3id2">
+    <p class="c3id3"><a href="{% url 'home' %}"> &lt; &lt; Back </a></p>
+    <p class="c3id3"><a href="{% url 'post_edit' post.pk %}"> Edit Blog</a></p>
+    <p class="c3id3"><a href="{% url 'post_delete' post.pk %}"> Delete Blog</a></p>
+</div>
+{% endblock content %}
+
+
+
+
+
+
+
+
+

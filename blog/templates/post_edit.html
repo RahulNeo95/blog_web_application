@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %} Edit {{object.pk}} {% endblock title %}
+
+{% block content %}
+
+<div>
+    <form action="" method="post"> {% csrf_token %}
+        {{form | crispy}}
+    <input type="submit" value="Edit">
+    </form>
+
+    <br>
+
+    <p class="c3id3"><a href="{% url 'post_detail' post.pk %}"> &lt; &lt; Back </a></p>
+</div>
+{% endblock content %}
+
+
+
+
+
+
